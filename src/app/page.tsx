@@ -1,143 +1,152 @@
-import Link from 'next/link'
+import Header from '@/components/layout/Header'
+import Hero from '@/components/sections/Hero'
+import Footer from '@/components/layout/Footer'
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Navigation */}
-      <nav className="bg-white shadow-sm border-b px-4 py-4">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold">Avtran</h1>
-          <div className="hidden md:flex space-x-6">
-            <Link href="#features" className="text-gray-600 hover:text-gray-900">Features</Link>
-            <Link href="#about" className="text-gray-600 hover:text-gray-900">About</Link>
-            <Link href="#contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
-          </div>
-        </div>
-      </nav>
-
-      {/* Hero Section */}
-      <main className="text-center py-20 px-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          <span className="block">Welcome to</span>
-          <span className="text-blue-600">Avtran</span>
-        </h1>
-        <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-          Your platform for modern development. Build, deploy, and scale with confidence.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="#signup" className="px-8 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700">
-            Get Started
-          </Link>
-          <Link href="#learn-more" className="px-8 py-3 bg-blue-100 text-blue-700 rounded-md hover:bg-blue-200">
-            Learn More
-          </Link>
-        </div>
-      </main>
-
+      <Header />
+      <Hero />
+      
       {/* Sign-up Section */}
-      <section id="signup" className="bg-gray-50 py-16 px-4">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to get started?
+      <section id="signup" className="bg-gradient-to-r from-gray-50 to-blue-50 py-20 px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Ready to Get Started?
           </h2>
-          <p className="text-lg text-gray-600 mb-8">
-            Join thousands of developers building amazing things.
+          <p className="text-xl text-gray-600 mb-12 leading-relaxed">
+            Join thousands of developers building amazing things with Avtran. Start your journey today.
           </p>
-          <form className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-4">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              required
-              className="w-full sm:w-80 px-5 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-            />
-            <button
-              type="submit"
-              className="w-full sm:w-auto px-5 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700"
-            >
-              Sign up
-            </button>
-          </form>
-          <p className="text-sm text-gray-500">
-            We care about your privacy. Read our{' '}
-            <Link href="#privacy" className="text-blue-600 hover:text-blue-500">Privacy Policy</Link>.
-          </p>
+          <div className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100">
+            <form className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2 text-left">
+                    First Name
+                  </label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    placeholder="Your first name"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2 text-left">
+                    Last Name
+                  </label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    placeholder="Your last name"
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2 text-left">
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                  placeholder="your@email.com"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2 text-left">
+                  Company (Optional)
+                </label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                  placeholder="Your company name"
+                />
+              </div>
+              
+              <button
+                type="submit"
+                className="w-full py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 font-semibold text-lg shadow-lg"
+              >
+                Start Building Today
+              </button>
+            </form>
+            
+            <p className="mt-6 text-sm text-gray-500">
+              By signing up, you agree to our{' '}
+              <a href="/terms" className="text-blue-600 hover:text-blue-800 underline">Terms of Service</a>
+              {' '}and{' '}
+              <a href="/privacy" className="text-blue-600 hover:text-blue-800 underline">Privacy Policy</a>.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section id="features" className="py-16 px-4">
+      {/* Features Preview Section */}
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12">
-            Why choose Avtran?
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+            Why Choose Avtran?
           </h2>
+          <p className="text-xl text-gray-600 mb-16 max-w-3xl mx-auto">
+            Everything you need to build and deploy modern applications with confidence.
+          </p>
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <div className="w-12 h-12 bg-blue-500 text-white rounded-md flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+            <div className="group">
+              <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                🚀
               </div>
-              <h3 className="text-lg font-medium mb-2">Fast Development</h3>
-              <p className="text-gray-600">Build quickly with modern tools and frameworks.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Lightning Fast</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Build and deploy applications 10x faster with our optimized development environment.
+              </p>
             </div>
-
-            <div>
-              <div className="w-12 h-12 bg-green-500 text-white rounded-md flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+            
+            <div className="group">
+              <div className="w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                🛡️
               </div>
-              <h3 className="text-lg font-medium mb-2">Reliable</h3>
-              <p className="text-gray-600">Trusted by developers worldwide.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Enterprise Security</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Bank-grade security with end-to-end encryption and compliance certifications.
+              </p>
             </div>
-
-            <div>
-              <div className="w-12 h-12 bg-purple-500 text-white rounded-md flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
+            
+            <div className="group">
+              <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                🌐
               </div>
-              <h3 className="text-lg font-medium mb-2">Loved by Developers</h3>
-              <p className="text-gray-600">Built with developers in mind.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Global Scale</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Deploy to 200+ global locations with automatic failover and optimization.
+              </p>
             </div>
+          </div>
+          
+          <div className="mt-12">
+            <a 
+              href="/features" 
+              className="inline-block px-8 py-4 bg-gradient-to-r from-green-600 to-blue-600 text-white rounded-xl hover:from-green-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 font-semibold text-lg shadow-lg"
+            >
+              Explore All Features
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Avtran</h3>
-              <p className="text-gray-300">Building the future of development, one project at a time.</p>
-            </div>
-            <div className="grid grid-cols-2 gap-8">
-              <div>
-                <h4 className="text-sm font-semibold text-gray-400 uppercase mb-4">Platform</h4>
-                <ul className="space-y-2">
-                  <li><Link href="#features" className="text-gray-300 hover:text-white">Features</Link></li>
-                  <li><Link href="#about" className="text-gray-300 hover:text-white">About</Link></li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="text-sm font-semibold text-gray-400 uppercase mb-4">Support</h4>
-                <ul className="space-y-2">
-                  <li><Link href="#contact" className="text-gray-300 hover:text-white">Contact</Link></li>
-                  <li><Link href="#help" className="text-gray-300 hover:text-white">Help</Link></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400">&copy; 2024 Avtran. All rights reserved.</p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="#privacy" className="text-gray-400 hover:text-white">Privacy Policy</Link>
-              <Link href="#terms" className="text-gray-400 hover:text-white">Terms of Service</Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
