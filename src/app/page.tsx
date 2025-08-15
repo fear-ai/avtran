@@ -1,6 +1,7 @@
 import Header from '@/components/layout/Header'
 import Hero from '@/components/sections/Hero'
 import Footer from '@/components/layout/Footer'
+import { Container, Card, CardHeader, CardTitle, CardDescription, Button } from '@/components/ui'
 
 export default function Home() {
   return (
@@ -95,55 +96,66 @@ export default function Home() {
 
       {/* Features Preview Section */}
       <section className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
-            Why Choose AVTran?
-          </h2>
-          <p className="text-xl text-gray-600 mb-16 max-w-3xl mx-auto">
-            Everything you need to build and deploy modern applications with confidence.
-          </p>
+        <Container size="lg">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+              Why Choose AVTran?
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Everything you need to build and deploy modern applications with confidence.
+            </p>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="group">
-              <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                🚀
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Lightning Fast</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Build and deploy applications 10x faster with our optimized development environment.
-              </p>
+            <div>
+              <Card variant="elevated" interactive size="lg">
+                <CardHeader>
+                  <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">
+                    🚀
+                  </div>
+                  <CardTitle>Lightning Fast</CardTitle>
+                  <CardDescription>
+                    Build and deploy applications 10x faster with our optimized development environment.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
             </div>
             
-            <div className="group">
-              <div className="w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                🛡️
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Enterprise Security</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Bank-grade security with end-to-end encryption and compliance certifications.
-              </p>
+            <div>
+              <Card variant="elevated" interactive size="lg">
+                <CardHeader>
+                  <div className="w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">
+                    🛡️
+                  </div>
+                  <CardTitle>Enterprise Security</CardTitle>
+                  <CardDescription>
+                    Bank-grade security with end-to-end encryption and compliance certifications.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
             </div>
             
-            <div className="group">
-              <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                🌐
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Global Scale</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Deploy to 200+ global locations with automatic failover and optimization.
-              </p>
+            <div>
+              <Card variant="elevated" interactive size="lg">
+                <CardHeader>
+                  <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">
+                    🌐
+                  </div>
+                  <CardTitle>Global Scale</CardTitle>
+                  <CardDescription>
+                    Deploy to 200+ global locations with automatic failover and optimization.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
             </div>
           </div>
           
-          <div className="mt-12">
-            <a 
-              href="/features" 
-              className="inline-block px-8 py-4 bg-gradient-to-r from-green-600 to-blue-600 text-white rounded-xl hover:from-green-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 font-semibold text-lg shadow-lg"
-            >
-              Explore All Features
-            </a>
+          <div className="mt-12 text-center">
+            <Button size="lg" variant="accent">
+              <a href="/features">Explore All Features</a>
+            </Button>
           </div>
-        </div>
+        </Container>
       </section>
 
       <Footer />
