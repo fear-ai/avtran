@@ -13,7 +13,7 @@ export default function Contact() {
             Get in Touch
           </h1>
           <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-            Have questions? Want to learn more? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            Have questions? Want to learn more? We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
           </p>
         </div>
       </section>
@@ -173,7 +173,7 @@ export default function Contact() {
             
             <div className="bg-gray-50 rounded-2xl p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Can I schedule a demo?</h3>
-              <p className="text-gray-600">Absolutely! Just let us know in your message and we'll arrange a personalized demo.</p>
+                              <p className="text-gray-600">Absolutely! Just let us know in your message and we&apos;ll arrange a personalized demo.</p>
             </div>
           </div>
         </div>

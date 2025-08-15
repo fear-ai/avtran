@@ -49,10 +49,10 @@ export default function About() {
       <section className="text-center py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 bg-clip-text text-transparent">
-            About Avtran
+            About AVTran
           </h1>
           <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-            We're building the future of development, one project at a time. Our mission is to empower developers with tools that make building software faster, safer, and more enjoyable.
+            We&apos;re building the future of development, one project at a time. Our mission is to empower developers with tools that make building software faster, safer, and more enjoyable.
           </p>
         </div>
       </section>
@@ -69,7 +69,7 @@ export default function About() {
                 We believe that great software comes from great developer experiences. Our platform combines cutting-edge technology with intuitive design to create tools that developers actually want to use.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                From startups to enterprises, we're helping teams build better software faster. Whether you're deploying your first app or scaling to millions of users, Avtran has the tools you need.
+                From startups to enterprises, we&apos;re helping teams build better software faster. Whether you&apos;re deploying your first app or scaling to millions of users, AVTran has the tools you need.
               </p>
             </div>
             <div className="bg-gradient-to-br from-purple-500 to-pink-500 rounded-3xl p-8 text-white text-center">
@@ -132,7 +132,7 @@ export default function About() {
             <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm">
               <div className="text-4xl mb-4">💡</div>
               <h3 className="text-xl font-bold mb-2">Innovation</h3>
-              <p>We constantly push the boundaries of what's possible in development</p>
+              <p>We constantly push the boundaries of what&apos;s possible in development</p>
             </div>
             <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm">
               <div className="text-4xl mb-4">🤝</div>

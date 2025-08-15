@@ -26,13 +26,13 @@ export default function Terms() {
               <div className="mb-8 p-6 bg-orange-50 rounded-2xl border border-orange-200">
                 <h2 className="text-2xl font-bold text-orange-800 mb-4">🤝 Our Simple Rule</h2>
                 <p className="text-orange-700">
-                  <strong>Be nice. Do not lie or steal.</strong> That's it. Treat others as you'd like to be treated.
+                  <strong>Be nice. Do not lie or steal.</strong> That&apos;s it. Treat others as you&apos;d like to be treated.
                 </p>
               </div>
 
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Acceptance of Terms</h2>
               <p className="text-gray-600 mb-8">
-                By accessing and using Avtran's platform, you agree to be bound by these terms. If you don't agree, please don't use our service.
+                By accessing and using AVTran&apos;s platform, you agree to be bound by these terms. If you don&apos;t agree, please don&apos;t use our service.
               </p>
 
               <h2 className="text-3xl font-bold text-gray-900 mb-6">What You Can Do</h2>
@@ -70,7 +70,7 @@ export default function Terms() {
 
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Intellectual Property</h2>
               <p className="text-gray-600 mb-4">
-                You retain ownership of your code and projects. We don't claim any rights to your intellectual property.
+                You retain ownership of your code and projects. We don&apos;t claim any rights to your intellectual property.
               </p>
               <p className="text-gray-600 mb-8">
                 Our platform, tools, and documentation remain our property. You can use them according to these terms.
@@ -78,18 +78,18 @@ export default function Terms() {
 
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Privacy and Data</h2>
               <p className="text-gray-600 mb-8">
-                We don't collect personal data. Your privacy is protected by default. See our{' '}
+                We don&apos;t collect personal data. Your privacy is protected by default. See our{' '}
                 <a href="/privacy" className="text-blue-600 hover:text-blue-800 underline">Privacy Policy</a> for details.
               </p>
 
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Service Availability</h2>
               <p className="text-gray-600 mb-8">
-                We strive to provide reliable service but cannot guarantee 100% uptime. We'll do our best to maintain service quality and notify you of any significant issues.
+                We strive to provide reliable service but cannot guarantee 100% uptime. We&apos;ll do our best to maintain service quality and notify you of any significant issues.
               </p>
 
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Limitation of Liability</h2>
               <p className="text-gray-600 mb-8">
-                We provide our service "as is" without warranties. We're not liable for any damages arising from your use of our platform.
+                We provide our service &quot;as is&quot; without warranties. We&apos;re not liable for any damages arising from your use of our platform.
               </p>
 
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Termination</h2>
@@ -99,7 +99,7 @@ export default function Terms() {
 
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Changes to Terms</h2>
               <p className="text-gray-600 mb-8">
-                We may update these terms occasionally. We'll notify you of significant changes. Continued use means you accept the new terms.
+                We may update these terms occasionally. We&apos;ll notify you of significant changes. Continued use means you accept the new terms.
               </p>
 
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Contact and Support</h2>
@@ -116,7 +116,7 @@ export default function Terms() {
 
               <div className="mt-8 p-6 bg-gradient-to-r from-orange-100 to-red-100 rounded-2xl border border-orange-200">
                 <p className="text-center text-gray-700">
-                  <strong>Remember:</strong> Be nice, be honest, be helpful. That's what makes our community great! 🚀
+                  <strong>Remember:</strong> Be nice, be honest, be helpful. That&apos;s what makes our community great! 🚀
                 </p>
               </div>
             </div>

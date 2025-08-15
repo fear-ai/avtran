@@ -15,7 +15,7 @@ export default function Home() {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-            Join thousands of developers building amazing things with Avtran. Start your journey today.
+            Join thousands of developers building amazing things with AVTran. Start your journey today.
           </p>
           <div className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100">
             <form className="space-y-6">
@@ -97,7 +97,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
-            Why Choose Avtran?
+            Why Choose AVTran?
           </h2>
           <p className="text-xl text-gray-600 mb-16 max-w-3xl mx-auto">
             Everything you need to build and deploy modern applications with confidence.

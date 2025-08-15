@@ -30,7 +30,7 @@ export default function Privacy() {
                 </p>
               </div>
 
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Information We Don't Collect</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Information We Don&apos;t Collect</h2>
               <ul className="space-y-3 text-gray-600 mb-8">
                 <li className="flex items-start space-x-3">
                   <span className="text-red-500 text-xl">✗</span>
@@ -79,12 +79,12 @@ export default function Privacy() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Your Rights</h2>
               <div className="bg-yellow-50 p-6 rounded-2xl border border-yellow-200 mb-8">
                 <p className="text-yellow-800">
-                  Since we don't collect personal data, there's nothing to access, modify, or delete. 
+                  Since we don&apos;t collect personal data, there&apos;s nothing to access, modify, or delete. 
                   Your privacy is protected by default.
                 </p>
               </div>
 
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Children's Privacy</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Children&apos;s Privacy</h2>
               <p className="text-gray-600 mb-8">
                 Our service is not intended for children under 13. We do not knowingly collect any personal information from children under 13.
               </p>

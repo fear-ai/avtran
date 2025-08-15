@@ -6,7 +6,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold hover:text-blue-200 transition-colors">
-            Avtran
+            AVTran
           </Link>
           <div className="hidden md:flex space-x-8">
             <Link href="/features" className="hover:text-blue-200 transition-colors font-medium">

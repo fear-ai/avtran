@@ -52,7 +52,7 @@ export default function Features() {
             Powerful Features
           </h1>
           <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-            Discover the tools and capabilities that make Avtran the platform of choice for modern developers.
+            Discover the tools and capabilities that make AVTran the platform of choice for modern developers.
           </p>
         </div>
       </section>
@@ -88,7 +88,7 @@ export default function Features() {
             Ready to Get Started?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Join thousands of developers building amazing things with Avtran.
+            Join thousands of developers building amazing things with AVTran.
           </p>
           <button className="px-10 py-4 bg-white text-blue-600 rounded-xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-200 font-semibold text-lg shadow-xl">
             Start Building Today

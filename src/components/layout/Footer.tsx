@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Avtran
+              AVTran
             </h3>
             <p className="text-gray-300 text-lg leading-relaxed">
               Building the future of development, one project at a time. Empowering developers with cutting-edge tools and seamless experiences.
@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-center md:text-left">
-            &copy; 2025 Avtran. All rights reserved.
+            &copy; 2025 AVTran. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">

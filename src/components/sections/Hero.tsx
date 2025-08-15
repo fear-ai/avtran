@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
           <span className="block">Welcome to</span>
-          <span className="block">Avtran</span>
+          <span className="block">AVTran</span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto mb-12 leading-relaxed">
           Your platform for modern development. Build, deploy, and scale with confidence using cutting-edge technology.
