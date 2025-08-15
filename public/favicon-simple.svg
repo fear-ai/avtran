@@ -1,0 +1,10 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Simple blue background -->
+  <rect width="32" height="32" fill="#2563EB" rx="6"/>
+  
+  <!-- Letter A in white -->
+  <path d="M16 8L22 24H20L18.5 20H13.5L12 24H10L16 8ZM16 10L13.5 18H18.5L16 10Z" fill="white"/>
+  
+  <!-- Simple horizontal line -->
+  <rect x="13.5" y="18" width="5" height="1" fill="white"/>
+</svg>
